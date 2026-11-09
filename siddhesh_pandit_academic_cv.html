@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic CV of Siddhesh Pandit, Physics student at the Indian Institute of Science, with interests in quantum error correction, quantum computing, tensor networks, and machine learning.">
+<title>Siddhesh Pandit — Academic CV</title>
+
+
+
+
+
+
+<style>
+:root {
+  --ink:#202a33; --muted:#5e6b75; --soft:#84909a; --line:#dfe5e8;
+  --accent:#285b6d; --accent-light:#eef4f5; --paper:#fff; --canvas:#f3f6f7;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--canvas);color:var(--ink);font:14px/1.62 var(--sans)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.toolbar{max-width:1000px;margin:18px auto 0;display:flex;justify-content:flex-end;gap:8px;padding:0 20px}
+.toolbar button{font:600 12px var(--sans);color:var(--accent);background:#fff;border:1px solid #cbd6db;border-radius:4px;padding:8px 12px;cursor:pointer}
+.toolbar button:hover{background:var(--accent-light)}
+.sheet{max-width:1000px;margin:12px auto 42px;padding:58px 66px 46px;background:var(--paper);border:1px solid var(--line);box-shadow:0 14px 42px rgba(22,43,53,.055)}
+/* .masthead{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;padding-bottom:24px;border-bottom:1px solid var(--line)} */
+.masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1.5px solid #bfcbd1;
+}
+.kicker{font-size:10px;letter-spacing:.19em;text-transform:uppercase;font-weight:750;color:var(--accent)}
+h1{font:500 clamp(38px,6vw,56px)/1.05 var(--serif);letter-spacing:-.04em;margin:8px 0 5px}
+.subtitle{font-size:14px;font-weight: 800;color:var(--muted)}
+.contacts{min-width:215px;text-align:right;font-size:11.5px;color:var(--muted);line-height:1.85}
+.contacts a{white-space:nowrap}
+.summary{font:17px/1.65 var(--serif);color:#37434c;max-width:850px;margin:24px 0 26px}
+.main-grid{display:grid;grid-template-columns:minmax(0,1fr) 218px;gap:38px}
+section{margin:0 0 26px;break-inside:avoid}
+h2{font:750 12.5px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 13px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+h3{font-size:14px;line-height:1.4;margin:0;font-weight:700}
+.entry{margin:0 0 17px;break-inside:avoid}
+.entry-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.date{font-size:11px;color:var(--soft);white-space:nowrap}
+.org{font-size:12px;color:var(--muted);margin-top:2px}
+p{margin:6px 0 0}
+ul{padding-left:17px;margin:6px 0 0;color:#35414a}
+li{padding-left:2px;margin:3px 0}
+.small{font-size:12.5px;color:#46525b}
+.skill-row{display:grid;grid-template-columns:126px 1fr;gap:10px;margin:8px 0}
+.skill-label{font-size:11px;font-weight:750;color:#394b56}
+.skill-content{font-size:12.5px;color:#45515a}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.tag{font-size:10.5px;color:#315666;background:var(--accent-light);padding:3px 7px;border-radius:3px}
+.side-block{margin:0 0 23px}
+.side-text{font-size:12px;color:#46535d}
+.side-label{font-size:9.5px;color:var(--soft);letter-spacing:.12em;text-transform:uppercase;margin:10px 0 2px}
+.side-value{font-size:12px;color:#34434d}
+.hint{background:#fbf8ed;border-left:3px solid #c5aa65;padding:10px 12px;font-size:11px;color:#5c523a;margin:18px 0 0}
+footer{border-top:1px solid var(--line);padding-top:11px;color:var(--soft);font-size:10px;display:flex;justify-content:space-between;gap:15px}
+.placeholder{color:#8b6e31;font-style:italic}
+@media(max-width:760px){
+ .sheet{margin:10px;padding:32px 24px}
+ .masthead{display:block}
+ .contacts{text-align:left;margin-top:14px}
+ .main-grid{grid-template-columns:1fr;gap:0}
+ aside{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+ .entry-top{display:block}.date{display:block;margin-top:2px}
+ .skill-row{grid-template-columns:1fr;gap:1px}
+}
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 12mm 14mm;
+    }
+
+    html, body {
+        background: white !important;
+        margin: 0;
+        padding: 0;
+        font-size: 10pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .toolbar {
+        display: none !important;
+    }
+
+    .sheet {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    /* Keep header and introduction full width */
+    .masthead {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .summary {
+        width: 100%;
+    }
+
+    /* Two-column print layout */
+    .main-grid {
+        display: block !important;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .primary {
+        float: left;
+        width: 68%;
+        padding-right: 20px;
+    }
+
+    aside {
+        float: right;
+        width: 29%;
+        margin: 0;
+    }
+
+    /* Clear floats after both columns */
+    .main-grid::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /* Allow content to flow across pages */
+    section {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    .entry {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    h2, h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .hint {
+        display: none;
+    }
+
+    footer {
+        clear: both;
+        margin-top: 15px;
+    }
+}
+
+.primary a {
+    color: #074e7e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.primary a:hover {
+    color: #64011b;
+    text-decoration: underline;
+}
+
+
+
+
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #52616b;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-link svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    flex-shrink: 0;
+}
+
+.contact-link:hover {
+    color: #245b70;
+}
+
+/* =========================
+   LIGHT THEME (DEFAULT)
+========================= */
+
+:root {
+    --ink: #202a33;
+    --muted: #5e6b75;
+    --soft: #84909a;
+    --line: #dfe5e8;
+
+    --accent: #285b6d;
+    --accent-light: #eef4f5;
+
+    --paper: #ffffff;
+    --canvas: #f3f6f7;
+
+    color-scheme: light;
+}
+
+/* =========================
+   DARK THEME
+========================= */
+
+[data-theme="dark"] {
+    --ink: #e5e7eb;
+    --muted: #b0bac3;
+    --soft: #89949e;
+    --line: #343d45;
+
+    --accent: #8ab4c5;
+    --accent-light: #25343b;
+
+    --paper: #171b1f;
+    --canvas: #101316;
+
+    color-scheme: dark;
+}
+
+/* =========================
+   THEME APPLICATION
+========================= */
+
+body {
+    background: var(--canvas);
+    color: var(--ink);
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.sheet {
+    background: var(--paper);
+    border-color: var(--line);
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.masthead {
+    border-color: var(--line);
+}
+
+h2 {
+    color: var(--accent);
+}
+
+a {
+    color: var(--accent);
+}
+
+.primary a {
+    color: var(--accent);
+}
+
+.primary a:hover {
+    color: #c58b9a;
+}
+
+.summary {
+    color: var(--ink);
+}
+
+ul,
+.small,
+.skill-content,
+.skill-label,
+.side-text,
+.side-value,
+.contact-link {
+    color: var(--muted);
+}
+
+.subtitle,
+.org {
+    color: var(--muted);
+}
+
+.tag {
+    color: var(--accent);
+    background: var(--accent-light);
+}
+
+.toolbar button {
+    background: var(--paper);
+    color: var(--accent);
+    border-color: var(--line);
+}
+
+.toolbar button:hover {
+    background: var(--accent-light);
+}
+
+/* Theme toggle button */
+
+#theme-toggle {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.2s, color 0.2s;
+}
+
+#theme-toggle:hover {
+    background: var(--accent-light);
+}
+
+.contact-link:hover {
+    color: var(--accent);
+}
+
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<!-- 
+<header class="masthead">
+    <h1>Your Name</h1>
+
+    <button id="theme-toggle" aria-label="Toggle theme">
+        ☾
+    </button>
+</header>
+
+-->
+
+<main class="sheet">
+  <header class="masthead">
+    <div>
+      <div class="kicker"><strong>Curriculum Vitae</strong></div>
+      <!-- <div class="kicker">Physics · Machine Learning &amp; Quantum Computing</div> -->
+      
+      <h1>Siddhesh Pandit</h1>
+      <div class="subtitle">Physics · Quantum Computing · Machine Learning</div>
+    </div>
+    <!-- <div class="contacts">
+      <div><a href="mailto:siddhshdaq@iisc.ac.in">siddhshdaq@iisc.ac.in</a></div>
+      <div><a href="https://github.com/Siddh-04" target="_blank" rel="noopener">github.com/Siddh-04</a></div>
+      <div>LinkedIn: siddhesh-pandit</div>
+      <div>Indian Institute of Science, Bengaluru</div>
+    </div> -->
+    
+    <div class="contact-links">
+          <button id="theme-toggle" aria-label="Toggle theme">
+          ☾
+          </button>
+
+
+      <!-- Location -->
+      <span class="contact-link">
+          <svg viewBox="0 0 24 24" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 5-8 12-8 12S4 15 4 10
+                       a8 8 0 1 1 16 0z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+          Indian Institute of Science, Bengaluru
+      </span>
+      
+    <!-- GitHub -->
+    <a class="contact-link"
+       href="https://github.com/Siddh-04"
+       target="_blank" rel="noopener">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>
+        Siddh-04
+    </a>
+
+    <!-- LinkedIn -->
+    <a class="contact-link"
+       href="https://www.linkedin.com/in/siddhesh-pandit/"
+       target="_blank" rel="noopener">
+
+        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+            <path d="M20.45 20.45h-3.56v-5.57
+            c0-1.33-.03-3.04-1.85-3.04
+            -1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05
+            c.48-.9 1.64-1.85 3.37-1.85
+            3.6 0 4.26 2.37 4.26 5.46v6.28zM5.34 7.43
+            a2.06 2.06 0 1 1 0-4.12
+            2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+        </svg>
+        Siddhesh-pandit
+    </a>
+
+    <!-- Email -->
+    <a class="contact-link"
+       href="mailto:siddhshpa@iisc.ac.in">
+
+        <svg viewBox="0 0 24 24" stroke-width="1.7"
+             stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m3 7 9 6 9-6"/>
+        </svg>
+        siddhshdaq@iisc.ac.in
+    </a>
+
+
+   
+
+</div>
+
+  </header>
+
+  <p class="summary">
+    Physics student at the Indian Institute of Science with research interests in quantum
+    error correction, quantum computing, tensor networks, and machine learning. Experience
+    spans graph-neural-network approaches to quantum error-correction decoding, quantum
+    algorithm implementation, and machine-learning methods for high-energy-physics data.
+  </p>
+
+  <div class="main-grid">
+    <div class="primary">
+      <section>
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-top">
+            <h3>Indian Institute of Science (IISc), Bengaluru</h3>
+            <span class="date">2022 – 2026</span></span>
+          </div>
+          <div class="org">BS-MS </span> · Physics</div>
+          <p class="small">Medium of instruction: English  · TGPA: 9.7</span></p>
+        </div>
+        <div class="entry">
+          <div class="entry-top"><h3>HSC — Maharashtra State Board</h3><span class="date">March 2022</span></div>
+          <p class="small"> Medium of instruction: Marathi · 83.33% </p>
+        </div>
+        <div class="entry">
+          <div class="entry-top"><h3>SSC — Maharashtra State Board</h3><span class="date">March 2020</span></div>
+          <p class="small">Medium of instruction: Marathi · 94.00% </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Research Experience</h2>
+        <div class="entry">
+          <div class="entry-top">
+            <h3>Neural Network based decoding for Quantum Error-Correction</h3>
+            <span class="date">Current research</span>
+          </div>
+          <div class="org">Indian Institute of Science · Prof. C.M Chandrashekar </div>
+          <ul>
+            <li>Developing the Graph based neural network for quantum error correction.</li>
+            <li>Simulated and processed rotated surface-code memory experiment data using Stim across code distances and measurement rounds.</li>
+            <li>Built spacetime detector graphs and evaluated neural decoders using logical error rate and classification metrics.</li>
+            <!-- <li>Explored tensor-network-derived probabilistic information as a possible source of guidance for neural decoder training.</li> -->
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-top">
+            <h3>Search for New Physics using Machine Learning in High-Energy Physics</h3>
+            <span class="date">2025 – 2026</span>
+          </div>
+          <div class="org">Bachelor's thesis · Supervisor: Prof. Jyothsna Komaragiri</div>
+          <ul>
+            <li>Simulated Standard Model using madgraph as background and Bulk Graviton decay as the signal.</li>
+            <li>Studied autoencoder-based unsupervised anomaly detection in high-energy physics using CMS Open Data from CERN.</li>
+            <li>Worked on data preprocessing, model architecture design, and hyperparameter tuning.</li>
+            <!-- <li>Trained autoencoders on Standard Model events to investigate anomalous events that may indicate potential new-physics signals.</li> -->
+            <li>Improved the model's performance from 65% to 88%.</li>
+            <li>Project repository: <a href="https://github.com/Siddh-04/Autoencoder-anomaly-detection" target="_blank" rel="noopener">github.com/Siddh-04/Autoencoder-anomaly-detection</a>.</li>
+            <li>Thesis pdf : <a href="https://github.com/Siddh-04/Autoencoder-anomaly-detection/blob/main/Siddhesh_Pandit_B_thesis.pdf" target="_blank" rel="noopener">Siddhesh_Pandit_Bachelor_thesis.pdf</a>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Selected Projects</h2>
+        <div class="entry">
+          <div class="entry-top"><h3>Quantum Algorithms using Qiskit</h3><span class="date">November 2025</span></div>
+          <ul>
+            <li>Implemented Deutsch–Jozsa, Simon's, Shor's factoring, and Grover's search algorithms using Qiskit.</li>
+            <li>Designed custom oracles and modular-exponentiation blocks; studied circuit behaviour on simulators under noise models and error-mitigation techniques.</li>
+            <li>Explored variational quantum algorithms for optimization problems.</li>
+            <li>Repository: <a href="https://github.com/Siddh-04/Quantum_Projects" target="_blank" rel="noopener">github.com/Siddh-04/Quantum_Projects</a>.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-top"><h3>Simulation and Analysis of Electromagnetic Showers</h3><span class="date">December 2024</span></div>
+          <div class="org">Winter intern : Supervisor: Prof. Jyothsna Komaragiri</div>
+          <ul>
+            <li>Simulated electromagnetic shower development for different particles using Geant4.</li>
+            <li>Implemented detector geometry and physics lists; analyzed energy deposition, shower profiles, and energy resolution across materials.</li>
+            <li>Visualized results using Python and ROOT.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-top"><h3>Rutherford Scattering Simulation</h3><span class="date">January 2025</span></div>
+          <ul>
+            <li>Developed a Geant4-based C++ simulation of the classical Rutherford scattering experiment.</li>
+            <li>Implemented detector geometry, materials, and physics lists; analyzed particle trajectories and scattering-angle distributions.</li>
+            <li>Repository: <a href="https://github.com/Siddh-04/Rutherford_scattering" target="_blank" rel="noopener">github.com/Siddh-04/Rutherford_scattering</a>.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-top"><h3>Kinematic Analysis of Leptons using CMS Open Data</h3><span class="date">July 2024</span></div>
+          <ul>
+            <li>Worked with the CMS POET / CMSSW ecosystem and AOD / miniAOD data formats.</li>
+            <li>Implemented event-selection and data-cleaning workflows involving electrons, muons, triggers, and isolation variables.</li>
+            <li>Repository: <a href="https://github.com/Siddh-04/vYomTool" target="_blank" rel="noopener">github.com/Siddh-04/vYomTool</a>.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-top"><h3>Binary Classification on LHC Events</h3><span class="date">March 2025</span></div>
+          <div class="org">PH354 : Computational Physics course project</div>
+          <ul>
+            <li>Compared Random Forest and XGBoost models for signal–background classification using simulated LHC events from the UCI-ML repository.</li>
+            <li>Reported 85% accuracy and an ROC-AUC score of 0.9376.</li>
+          </ul>
+        </div>
+        <!-- <div class="entry">
+          <div class="entry-top"><h3>Verification of the Bethe–Bloch Energy-Loss Formula</h3><span class="date">March 2024</span></div>
+          <ul>
+            <li>Used Geant4 to simulate charged-particle energy loss across particle species and materials.</li>
+            <li>Compared mean energy loss, ⟨dE/dx⟩, as a function of βγ with Bethe–Bloch theory; examined the minimum-ionizing and relativistic-rise regions.</li>
+          </ul>
+        </div> -->
+      </section>
+
+      <section>
+        <h2>Relevant Coursework</h2>
+        <p class="small"><strong>Quantum:</strong> Quantum Mechanics I &amp; II, Quantum Computation, Quantum Measurement and Control, Quantum Error-Correcting Codes, Quantum Communication and Cryptography.</p>
+        <p class="small"><strong>Mathematics:</strong> Linear Algebra, Probability and Statistics.</p>
+        <p class="small"><strong>Physics:</strong> Computational Physics, Quantum Field Theory.</p>
+        <p class="small"><strong>Computing:</strong> Machine Learning, Algorithms and Programming.</p>
+      </section>
+
+      <section>
+        <h2>Achievements, Workshops &amp; Activities</h2>
+        <ul>
+          <li>Volunteer, Science For Rural India </li>
+          <li><strong>Second place</strong>, HSF-India Hackathon, IISc  <span class="date" style="float: right;">June 2025</span></li>
+          <li>Attended High Energy Physics Software Workshop, IISc  <span class="date" style="float: right;">2025</span></li>
+          <li>Attended IQM Workshop  <span class="date" style="float: right;">December 2025</span></li>
+          <li>Volunteer, Pravega workshops, IISc  <span class="date" style="float: right;">2023</span></li>
+          <li>Qualified JEE Advanced and JEE Main  <span class="date" style="float: right;">2022</span></li>
+        </ul>
+      </section>
+
+      <!-- <section>
+        <h2>Publications &amp; Presentations</h2>
+        <p class="small placeholder">[Add publications, preprints, posters, talks or conference contributions, if applicable. Otherwise remove this section.]</p>
+      </section> -->
+    </div>
+
+    <aside>
+      <section class="side-block">
+        <h2>Research Interests</h2>
+        <div class="tags">
+          <span class="tag">Quantum Error Correction</span>
+          <span class="tag">Quantum Computing</span>
+          <span class="tag">Quantum Information</span>
+          <span class="tag">Tensor Networks</span>
+          <span class="tag">Graph Neural Networks</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Quantum Communication</span>
+          <span class="tag">Experimental Particle Physics</span>
+          <span class="tag">Collider Physics</span>
+          <!-- <span class="tag">Anomaly Detection</span> -->
+          <span class="tag">Detector Simulation</span>
+        </div>
+      </section>
+
+      <section class="side-block">
+        <h2>Technical Skills</h2>
+        <div class="side-label">Programming</div>
+        <div class="side-value">Python, C++, ROOT, LaTeX</div>
+        <div class="side-label">Machine Learning</div>
+        <div class="side-value">Scikit-learn, PyTorch, TensorFlow, PyTorch Geometric</div>
+        <div class="side-label">Data Science</div>
+        <div class="side-value">NumPy, Pandas, Matplotlib, SciPy</div>
+        <div class="side-label">Quantum Computing &amp; QEC</div>
+        <div class="side-value">Qiskit, Qiskit Aer, Qrisp, Stim, PyMatching, CUDA-Q QEC</div>
+        <div class="side-label">Scientific Computing</div>
+        <div class="side-value">Geant4, Pythia, Delphes, Uproot, Awkward Array</div>
+        <div class="side-label">Other</div>
+        <div class="side-value">Linux, Git, Conda, Tensor-network tools</div>
+      </section>
+
+      <section class="side-block">
+        <h2>Selected Repositories</h2>
+        <div class="side-text">
+          <p><a href="https://github.com/Siddh-04/Quantum_Projects" target="_blank" rel="noopener">Quantum algorithms</a></p>
+          <p><a href="https://github.com/Siddh-04/Autoencoder-anomaly-detection" target="_blank" rel="noopener">CMS anomaly detection</a></p>
+          <p><a href="https://github.com/Siddh-04/Rutherford_scattering" target="_blank" rel="noopener">Rutherford simulation</a></p>
+          <p><a href="https://github.com/Siddh-04/vYomTool" target="_blank" rel="noopener">CMS analysis tools</a></p>
+        </div>
+      </section>
+
+      <section class="side-block">
+        <h2>Languages</h2>
+        <div class="side-text">English - Fluent </div>
+        <div class="side-text">Marathi - Native </div>
+        <div class="side-text">Hindi - Fluent </div>
+
+        <!-- <div class="side-text placeholder">[German — current level]</div> -->
+      </section>
+    </aside>
+  </div>
+
+  <!-- <div class="hint">
+    Draft note: confirm the official IISc degree title and expected completion date, clarify the meaning/term for TGPA 9.7, and fill the bracketed contact, supervisor, language and publication details before submitting.
+  </div> -->
+  <footer>
+    <span>Academic CV · Pandit Siddhesh Ashok</span>
+    <span>Last updated: November 2026</span>
+  </footer>
+</main>
+
+
+<script>
+const toggle = document.getElementById("theme-toggle");
+
+const savedTheme = localStorage.getItem("theme") || "light";
+
+document.documentElement.setAttribute("data-theme", savedTheme);
+
+toggle.textContent = savedTheme === "dark" ? "☀" : "☾";
+
+toggle.addEventListener("click", () => {
+
+    const currentTheme =
+        document.documentElement.getAttribute("data-theme");
+
+    const newTheme =
+        currentTheme === "dark" ? "light" : "dark";
+
+    document.documentElement.setAttribute("data-theme", newTheme);
+
+    localStorage.setItem("theme", newTheme);
+
+    toggle.textContent = newTheme === "dark" ? "☀" : "☾";
+
+});
+</script>
+
+
+</body>
+</html>
